@@ -8,14 +8,14 @@
  */
 
 /*===========================================
- *    sl.c: SL-Random version 1.10
+ *    sl.c: SL-Random version 1.11
  *        Copyright 2025
  *                  Peter Walker
  *                  (peterjw2005@gmail.com)
  *        Last Modified: 2025/05/15
  *===========================================
  */
- /* SL-Random 1.10: Include random number of carriages */
+ /* SL-Random 1.1x: Include random number of carriages */
 
 #include <curses.h>
 #include <signal.h>
@@ -25,7 +25,7 @@
 void add_smoke(int y, int x);
 void add_man(int y, int x);
 int add_C51(int x);
-int add_D51(int x);
+int add_D51(int x, int n);
 int add_sl(int x);
 void option(char *str);
 int my_mvaddstr(int y, int x, char *str);
