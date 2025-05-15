@@ -1,4 +1,4 @@
-SL: Cure your bad habit of mistyping, with a twist!
+SL-Random: Cure your bad habit of mistyping, with a twist!
 =======================================
 
 SL (Steam Locomotive) runs across your terminal when you type "sl" as
