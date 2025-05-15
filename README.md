@@ -14,6 +14,12 @@ git clone https://github.com/peterw18/sl-random
 cd sl-random
 make
 ```
+Alternatively, patch your original sl binary from https://github.com/mtoyoda/sl:
+```
+sudo apt install bsdiff
+mv sl sl-temp
+sudo bspatch sl-temp sl sl-random.patch
+```
 
 Copyright 2025 Peter Walker (peterjw2005@gmail.com)
 
