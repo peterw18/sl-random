@@ -17,9 +17,11 @@
  */
  /* SL-Random 1.1x: Include random number of carriages */
 
+#include <stdlib.h>
 #include <curses.h>
 #include <signal.h>
 #include <unistd.h>
+#include <time.h>
 #include "sl.h"
 
 void add_smoke(int y, int x);
