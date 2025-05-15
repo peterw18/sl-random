@@ -15,4 +15,6 @@ cd sl-random
 make
 ```
 
+Copyright 2025 Peter Walker (peterjw2005@gmail.com)
+
 ![](demo.gif)
