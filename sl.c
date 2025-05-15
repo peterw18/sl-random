@@ -92,7 +92,7 @@ int main(int argc, char *argv[])
         }
         else {
             // default carriage
-            if (add_D51(x) == ERR) break;
+            if (add_D51(x, n) == ERR) break;
         }
         getch();
         refresh();
@@ -151,7 +151,7 @@ int add_sl(int x)
 }
 
 
-int add_D51(int x)
+int add_D51(int x, int n)
 {
     static char *d51[D51PATTERNS][D51HEIGHT + 1]
         = {{D51STR1, D51STR2, D51STR3, D51STR4, D51STR5, D51STR6, D51STR7,
@@ -182,7 +182,7 @@ int add_D51(int x)
     for (i = 0; i <= D51HEIGHT; ++i) {
         my_mvaddstr(y + i, x, d51[(D51LENGTH + x) % D51PATTERNS][i]);
         my_mvaddstr(y + i + dy, x + 53, coal[i]);
-        for (j = 1; j <= n; j++){
+        for (int j = 1; j <= n; j++){
             int xcoord = x + 53 + (j * coalLength);
             my_mvaddstr(y + i + dy, xcoord, coal[i]);
         }
